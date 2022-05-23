@@ -32,7 +32,7 @@ public class Mensageiro {
                     new javax.mail.Authenticator(){
                         protected PasswordAuthentication getPasswordAuthentication()
                         {
-                            return new PasswordAuthentication("giljssjustino@gmail.com", "44523786");
+                            return new PasswordAuthentication("giljssjustino@gmail.com", "********");
                         }
                     });
 
@@ -45,7 +45,7 @@ public class Mensageiro {
                 Address[] toUser = InternetAddress.parse(destinatario);
 
                 message.setRecipients(Message.RecipientType.TO, toUser);
-                message.setSubject("Programação de hoje");
+                message.setSubject("ProgramaÃ§Ã£o de hoje");
 
                 message.setText("Teste");
 
